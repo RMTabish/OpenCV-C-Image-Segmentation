@@ -1,4 +1,4 @@
-Dynamic Tic Tac Toe Game
+# Tic Tac Toe Game
 This is a Python implementation of a dynamic Tic Tac Toe game.
 The game is played on a variable-sized board, and the number of players can be set from 2 to 5.
 Players take turns placing their marks on the board until one player gets a winning combination or the board is full and the game ends in a tie.
