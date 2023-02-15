@@ -1,29 +1,24 @@
-# Shape Separation and Isolation using OpenCV in C++
+Dynamic Tic Tac Toe Game
+This is a Python implementation of a dynamic Tic Tac Toe game.
+The game is played on a variable-sized board, and the number of players can be set from 2 to 5.
+Players take turns placing their marks on the board until one player gets a winning combination or the board is full and the game ends in a tie.
+Getting Started
+To play the game, you will need to have Python 3 installed on your machine.
 
-This project is a C++ implementation that uses OpenCV library to separate and isolate individual shapes in a grayscale image and creating another image for each different shape found. The algorithm used in this project is called "column-wise traversal" which uses a stack to process the pixels.
+If you don't have Python installed, you can download it from the official website: https://www.python.org/downloads/
 
-The algorithm works as follows:
-1. Create a blank image of the same size as the input image.
-2. Start from the first pixel and add its location to the stack.
-3. As long as the stack is not empty, remove a pixel location and put 255 in place of that pixel location in the new blank image.
-4. As soon as you remove a pixel location from the stack, check all its neighbours that are 255.
-5. Add those locations to the stack if they have not been processed yet.
-6. If the pixel has already been processed, it will not be added to the stack again.
-7. When the stack is empty, the new blank image will have the object separated from the rest of the objects in the input image.
+Usage
+The game will ask you to input the number of players (between 2 and 5) and the board size (between 3 and 10).
 
-## Requirements
-- OpenCV (3.4 or later)
-- Visual Studio (2015 or later)
-- Windows
+Once the game is started, each player will take turns placing their marks on the board using the coordinates of their chosen cell.
 
-## Usage
-1. Clone the repository
-2. Rename the input image to "img1.jpg" or change the name in the code at line number 15
-3. Open the project in Visual Studio
-4. Add OpenCV include and library paths to the project properties
-5. Build and run the project
-6. The resulting images of each shape will be saved in the same directory with the prefix "image-" and the shape number as suffix, for example "image-1.jpg"
+The game will continue until one player gets a winning combination or the board is full and the game ends in a tie.
 
-## Note
-- The program currently only works with grayscale images.
-- Feel free to modify the code to suit your needs.
+Contributing
+If you would like to contribute to the project, you can fork the repository and make changes to the code.
+Once you have made your changes, you can submit a pull request to have your changes reviewed and merged into the main branch.
+License
+This project is licensed under the MIT License.
+See the LICENSE file for details.
+Acknowledgements
+This project was inspired by the classic game of Tic Tac Toe and was developed for educational purposes.
